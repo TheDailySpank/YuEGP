@@ -87,7 +87,13 @@ A flux derived image generator that will allow you to transfer an object of your
 
 ## Requirements
 
-Python >=3.8 is recommended.
+
+
+~Python >=3.8 is recommended.~
+
+```
+conda create -n yuegp python=3.11
+```
 
 Install dependencies with the following command:
 
