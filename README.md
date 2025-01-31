@@ -93,6 +93,7 @@ A flux derived image generator that will allow you to transfer an object of your
 
 ```
 conda create -n yuegp python=3.11
+conda activate yuegp
 ```
 
 Install dependencies with the following command:
