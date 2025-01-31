@@ -31,19 +31,19 @@ Please first follow the instructions to install the app below.
 To run the Gradio app with a profile 3 (default profile, the fastest but requires 16 GB of VRAM):
 ```bash
 cd inference
-python gradio_app --profile 1
+python gradio_server.py --profile 1
 ```
 
 To run the Gradio app with a profile 3 (default profile, a bit slower and the model is quantized to 8 bits but requires 12 GB of VRAM):
 ```bash
 cd inference
-python gradio_app --profile 3
+python gradio_server.py --profile 3
 ```
 
 To run the Gradio app with less than 10 GB of VRAM  profile 4 (very slow as this will incur sequencial offloading):
 ```bash
 cd inference
-python gradio_app --profile 4
+python gradio_server.py --profile 4
 ```
 
 If you have a Linux based system / Windows WSL or  were able to install Triton on Windows, you can also turn on Pytorch compilation with '--compile' for a faster generation.  
@@ -56,7 +56,7 @@ To install Triton on Windows: https://github.com/woct0rdho/triton-windows/releas
 Likewise if you were not able to install flash attention on Windows, you can force the application to use sdpa attention instead by using the '--sdpa' switch. Be aware that this may requires more VRAM
 ```bash
 cd inference
-python gradio_app --profile 4 --sdpa
+python gradio_server.py --profile 4 --sdpa
 ```
 
 
